@@ -8,3 +8,4 @@ export const loadNewsSuccess = createAction(
   `${namespace} load news success`,
   resolve => (news: NewsItem[]) => resolve(news)
 );
+export const loadNewsError = createAction(`${namespace} load news error`);

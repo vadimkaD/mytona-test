@@ -1,9 +1,9 @@
-import { all, put, select, call, takeLatest } from "redux-saga/effects";
+import { all, put, call, takeLatest } from "redux-saga/effects";
 import { ActionType, getType } from "deox";
 import { message } from "antd";
 
 import { login, loginError, loginSuccess } from "./Login.actions";
-import { LoginAnswer, LoginFormValues, LoginParams } from "../Login.types";
+import { LoginAnswer, LoginParams } from "../Login.types";
 import { auth } from "../Login.utils";
 import { saveToken } from "../../Auth/Auth.utils";
 
